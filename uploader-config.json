@@ -1,0 +1,9 @@
+{
+  "owner": "andrew0416",
+  "repo": "open-batoru-translation-ko",
+  "branch": "main",
+  "languagePrefix": "ko",
+  "dbFileName": "translate.db",
+  "manifestFileName": "translate-manifest.json",
+  "releaseBody": "Korean translate.db update."
+}

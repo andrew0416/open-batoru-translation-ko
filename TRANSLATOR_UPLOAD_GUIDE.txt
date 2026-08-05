@@ -1,0 +1,48 @@
+Translator upload guide
+=======================
+
+Put these files in one folder:
+
+- UPLOAD_TRANSLATE_DB.bat
+- upload-translate-db.ps1
+- uploader-config.json
+- github-token.txt
+- translate.db
+
+github-token.txt:
+
+Paste only your GitHub personal access token into this file.
+Do not upload this file to GitHub.
+
+translate.db:
+
+Put the database you want to publish next to UPLOAD_TRANSLATE_DB.bat.
+
+Upload:
+
+Double-click UPLOAD_TRANSLATE_DB.bat.
+
+The uploader will:
+
+1. Check local translate.db.
+2. Download the latest released translate.db.
+3. Compare both files by SHA256.
+4. Stop if both files are the same.
+5. Create a new release if the file changed.
+6. Upload translate.db to that release.
+7. Update translate-manifest.json.
+
+Version format:
+
+ko-YYYY-MM-DD-NN
+
+Examples:
+
+ko-2026-08-05-01
+ko-2026-08-05-02
+ko-2026-08-06-01
+
+Do not upload these files:
+
+- github-token.txt
+- translate.db
